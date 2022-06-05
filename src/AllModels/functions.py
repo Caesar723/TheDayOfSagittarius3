@@ -9,7 +9,8 @@ import threading
 """
 [y,x]
 """
-
+PATH='src/AllModels/'
+MUSICPATH='src/music/4.mp3'
 def initinaliseGenerator(fun):
     get=fun()
     return get
@@ -24,7 +25,7 @@ def timeRecord(fun):
     return func
 
 def loadDll():# try to load dll in possible path
-    address=("libhug.so","Dll1.dll","Dll1.dll")#possible path
+    address=(f"{PATH}libhug.so",f"{PATH}Dll1.dll",f"{PATH}Dll1.dll")#possible path
     for addr in address:
         try:
             lib=ctypes.CDLL(addr)
@@ -380,7 +381,7 @@ def drawLaser(map,player,timepara):#test
 
 def playMusic():#background music
     pygame.mixer.music.load(
-        "music/4.mp3"
+        MUSICPATH
     )
     pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(loops=-1)  # play background music

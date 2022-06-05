@@ -12,8 +12,7 @@ from AllModels import *
 from AllModels.Game import startGame
 
 
-
-        
+PATH="src/photo/hall/"
 
 class MyWidget(QtWidgets.QGraphicsView):
     
@@ -21,7 +20,7 @@ class MyWidget(QtWidgets.QGraphicsView):
         super().__init__()
         self.resize(1160, 800)
         self.setFixedSize(1160, 800)# initinal page size
-        self.setWindowIcon(QtGui.QIcon('photo/hall/yuki.ico'))
+        self.setWindowIcon(QtGui.QIcon(f"{PATH}yuki.ico"))
         self.setWindowTitle('The Day of Sagittarius 3')
 
         self.IpRoom={}# used to store ip which be found ip:time
@@ -44,7 +43,7 @@ class MyWidget(QtWidgets.QGraphicsView):
         self.hallButton={"START":self.toMatchRoom,"TUTORIAS":self.toTutorial}# initinal  the event of ech key
         self.tutorDictPage1=readDefineFile()
         
-        self.backGround=QtGui.QPixmap("photo/hall/back.jpg")#background
+        self.backGround=QtGui.QPixmap(f"{PATH}back.jpg")#background
         self.backGround=self.backGround.scaled(self.width(),self.height())
         self.setBackgroundBrush(self.backGround)
         self.setScene(QtWidgets.QGraphicsScene(self))
@@ -83,15 +82,15 @@ class MyWidget(QtWidgets.QGraphicsView):
         getKeyTitle.hide()
         getLabel=self.tutorLabel()
         getLabel.hide()
-        self.tutorImage={'+':[self.initinalImage("photo/hall/enlarge.png",(350,200),(750,550))],# initinal all the tutor image
-                        '-':[self.initinalImage("photo/hall/compress.png",(350,200),(750,550))],
-                        '0~9':[self.initinalImage("photo/hall/click0-9.png",(350,250),(750,350))],
-                        "'!'~')'":[self.initinalImage("photo/hall/click!-).png",(350,250),(750,350))],
-                        'S':[self.initinalImage("photo/hall/spreat.png",(400,250),(650,450))],
-                        'D':[self.initinalImage("photo/hall/Deploy.png",(400,250),(650,500))],
-                        'L':[self.initinalImage("photo/hall/Laser.png",(400,250),(650,500))],
-                        'T':[self.initinalImage("photo/hall/Torpid.png",(400,250),(650,500))],
-                        'C':[self.initinalImage("photo/hall/collect.png",(400,250),(700,450))],}
+        self.tutorImage={'+':[self.initinalImage(f"{PATH}enlarge.png",(350,200),(750,550))],# initinal all the tutor image
+                        '-':[self.initinalImage(f"{PATH}compress.png",(350,200),(750,550))],
+                        '0~9':[self.initinalImage(f"{PATH}click0-9.png",(350,250),(750,350))],
+                        "'!'~')'":[self.initinalImage(f"{PATH}click!-).png",(350,250),(750,350))],
+                        'S':[self.initinalImage(f"{PATH}spreat.png",(400,250),(650,450))],
+                        'D':[self.initinalImage(f"{PATH}Deploy.png",(400,250),(650,500))],
+                        'L':[self.initinalImage(f"{PATH}Laser.png",(400,250),(650,500))],
+                        'T':[self.initinalImage(f"{PATH}Torpid.png",(400,250),(650,500))],
+                        'C':[self.initinalImage(f"{PATH}collect.png",(400,250),(700,450))],}
         self.currentTutor=[]
         self.Tutorual=[getTitle,getList,getLabel,getKeyTitle,self.backButton]
 
@@ -238,7 +237,7 @@ class MyWidget(QtWidgets.QGraphicsView):
             self.toMatchRoom()
 
     def setup_scene(self,pos,length=0,hight=0):# initinal the TDOS title
-        image=QtGui.QPixmap("photo/hall/title.png")
+        image=QtGui.QPixmap(f"{PATH}title.png")
         if length!=0 and hight!=0:
             image=image.scaled(length,hight,QtGui.Qt.IgnoreAspectRatio)
         icon: QtWidgets.QGraphicsPixmapItem = self.scene().addPixmap(image)
@@ -501,13 +500,13 @@ class MyWidget(QtWidgets.QGraphicsView):
 
 """functions"""
 def readQssFile():# read qss(css) file
-    with open("QTStyle/SeparateTable.qss",'r') as file:
+    with open("src/QTStyle/SeparateTable.qss",'r') as file:
         get=file.read()
     return get
 
 def readDefineFile():# read the tutorial message
     dic={}
-    with open("QTStyle/tutorKeyDefine.txt",'r') as file:
+    with open("src/QTStyle/tutorKeyDefine.txt",'r') as file:
         get=file.read()
     for each in get.split("\n"):
         key,content=each.split("#")

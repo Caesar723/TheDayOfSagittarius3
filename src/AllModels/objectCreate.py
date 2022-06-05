@@ -9,7 +9,7 @@ import random
 
 
 
-PATH='photo/game/'
+PATH='src/photo/game/'
 class MAP:
     factor = 1
     MAXRANGE, MINRANGE = 3, 1
@@ -32,8 +32,9 @@ class MAP:
         self.imageInitialise()
 
     def imageInitialise(self): # Initialise image
+        print("ok")
         self.menu=pygame.transform.scale(pygame.image.load(f"{PATH}Background.png"),(120,30))
-        
+        print("ok")
         self.font=pygame.font.SysFont('Helvetica', 15)
         self.Mfont=pygame.font.SysFont('Helvetica', 20)
         self.menuPosition={"ATTACK":(815,430),"SCOUT":(815,550),"DIVISION":(815,660)}

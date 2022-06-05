@@ -5,7 +5,7 @@ from AllModels.socketProcessServer import startSocket, IP
 from AllModels.socketProcessClient import startSocketClient
 from multiprocessing import Process, Manager
 
-
+PATH='src/photo/game/'
 
 def initinalDict(map,playerDictOppo,playerDictMate,GameInformation):
     
@@ -59,7 +59,7 @@ def startGame(GameInformation):
     multi.start()
 
     pygame.init()# start game
-    pygame.display.set_icon(pygame.image.load('photo/game/yuki.png'))
+    pygame.display.set_icon(pygame.image.load(f'{PATH}yuki.png'))
     pygame.display.set_caption('The Day of Sagittarius 3')
     
     screen = pygame.display.set_mode((1160, 800))

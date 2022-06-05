@@ -20,7 +20,7 @@ python3 TheDayOfSagittarius3/src/gameHall.py
 ```
 
 ## Attention
-**If you find that the screen is black or not display, place change the path in each file.**
+**If you find that the screen is black or not display, please change the path in each file.**
 
 For example
 > <img width="236" alt="截屏2022-06-05 下午12 32 20" src="https://user-images.githubusercontent.com/76422688/172035107-e200c7f1-244f-46c0-90f6-7aca92c30c80.png">

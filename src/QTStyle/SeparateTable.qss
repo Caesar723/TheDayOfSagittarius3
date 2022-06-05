@@ -1,0 +1,109 @@
+QListWidget#evilButton{
+
+    background-color: rgba(60,72,99,0.3);
+    border-radius:15px;
+    font-size:25px;
+    font-family: Georgia, serif;
+}
+
+QListWidget#evilButton::item {
+     height: 50px;
+     color:rgba(230,246,248,0.9);
+     border-radius:15px;
+     
+ }
+ 
+QListWidget#evilButton::item:selected {
+    background-color: rgba(60,72,99,0.6);
+    border-radius:15px;
+}
+
+QListWidget#TutorButton{
+
+    background-color: rgba(60,72,99,0.3);
+    border-radius:5px;
+    font-size:25px;
+    font-family: Georgia, serif;
+}
+
+QListWidget#TutorButton::item {
+     height: 50px;
+     color:rgba(230,246,248,0.9);
+     border-radius:5px;
+     
+ }
+ 
+QListWidget#TutorButton::item:selected {
+    background-color: rgba(60,72,99,0.6);
+    border-radius:5px;
+}
+
+QLabel#TutorLabel{
+    background-color: rgba(60,72,99,0.2);
+    border-radius:5px;
+    font-size:27px;
+    font-family: Georgia, serif;
+    color:rgba(230,246,248,0.9);
+}
+QLabel#TutorKey{
+    background-color: rgba(60,72,99,0);
+    
+    font-size:30px;
+    font-family: Georgia, serif;
+    color:rgba(230,246,248,0.9);
+}
+
+QPushButton#backButton{
+    border-radius:5px;
+    color:rgba(230,246,248,0.9);
+    font-size:15px;
+    background-color: rgba(60,72,99,0.3);
+    font-family: Georgia, serif;
+}
+
+QPushButton#backButton:pressed {
+    background-color: rgba(60,72,99,0.6);
+}
+
+QListWidget#IpButton{
+
+    background-color: rgba(60,72,99,0.3);
+    border-radius:15px;
+    font-size:25px;
+    font-family: Georgia, serif;
+    color:rgba(230,246,248,0.9);
+}
+QListWidget#IpButton::item {
+     height: 50px;
+     color:rgba(230,246,248,0.9);
+     border-radius:15px; 
+}
+QListWidget#IpButton::item:selected {
+    background-color: rgba(60,72,99,0.6);
+    border-radius:15px;
+}
+
+QLineEdit#CreateEdit{
+    background-color: rgba(60,72,99,0.6);
+    border-radius:15px;
+    font-size:30px;
+    color:rgba(230,246,248,0.9);
+}
+
+QListWidget#TeamButton{
+
+    background-color: rgba(60,72,99,0.3);
+    border-radius:15px;
+    font-size:20px;
+    font-family: Georgia, serif;
+    color:rgba(230,246,248,0.9);
+}
+QListWidget#TeamButton::item {
+     width: 150px;
+     color:rgba(230,246,248,0.9);
+     border-radius:15px; 
+}
+QListWidget#TeamButton::item:selected {
+    background-color: rgba(60,72,99,0.6);
+    border-radius:15px;
+}

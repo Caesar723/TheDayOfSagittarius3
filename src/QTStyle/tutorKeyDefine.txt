@@ -1,0 +1,9 @@
++#Enlarge the map,you can have a bigger vision
+-#Compress the map,you can have a smaller vision
+0~9#Choose a flight to control. For instance, pressing "5" means that you will control the NO.5 flight
+'!'~')'#Choose a flight to control. For instance, pressing "!" means that you will control the NO.11 flight
+S#Used to split the flight, the sum of the flights' blood is equal to the original flight's blood 
+D#Turn to the deploy pattern, when click the area , flight will send a scout to enlarge the visible area
+L#Turn the weapon to laser, 80 power each second, must be used in attack range
+T#Turn the weapon to torpid, 500 power each torpid, can used in anywhere but must used in visible area
+C#Collect the scout 

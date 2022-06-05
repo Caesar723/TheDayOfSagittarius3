@@ -20,6 +20,12 @@ python3 TheDayOfSagittarius3/src/gameHall.py
 ```
 
 ## Attention
+If you find that the screen is black or not display, place change the path in each file.
+
+For example
+> <img width="236" alt="截屏2022-06-05 下午12 32 20" src="https://user-images.githubusercontent.com/76422688/172035107-e200c7f1-244f-46c0-90f6-7aca92c30c80.png">
+
+
 If you meet error in this area, which could mean that the .dll file or .so file is not suitable in your computer. 
 > <img width="645" alt="截屏2022-06-05 上午9 44 20" src="https://user-images.githubusercontent.com/76422688/172031375-9c31941c-b8b9-442b-b34f-7dcecc601564.png">
 So you must create a .so or .dll file in your computer and put the path into address tuple.

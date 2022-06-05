@@ -56,3 +56,6 @@ download and use the same account to log in
 
 if you log in you can see this graph, and find the server ip which is the computer that create a room by this ip
 > <img width="282" alt="截屏2022-06-05 上午11 52 48" src="https://user-images.githubusercontent.com/76422688/172034339-d0d880d1-fcf5-4264-a8e8-d544da1009b2.png">
+
+if you are client click search room ,Otherwise click create room.
+> <img width="1156" alt="截屏2022-06-05 下午12 26 29" src="https://user-images.githubusercontent.com/76422688/172035028-78fe5d7b-e9d2-4649-959b-5816064f16de.png">

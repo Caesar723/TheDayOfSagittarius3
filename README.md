@@ -59,3 +59,6 @@ if you log in you can see this graph, and find the server ip which is the comput
 
 if you are client click search room ,Otherwise click create room.
 > <img width="1156" alt="截屏2022-06-05 下午12 26 29" src="https://user-images.githubusercontent.com/76422688/172035028-78fe5d7b-e9d2-4649-959b-5816064f16de.png">
+
+Put the ip into box
+> <img width="1156" alt="截屏2022-06-05 下午12 27 21" src="https://user-images.githubusercontent.com/76422688/172035046-0f640c5a-d9ea-43fe-a087-a86d29623a2d.png">
